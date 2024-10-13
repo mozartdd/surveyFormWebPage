@@ -7,6 +7,60 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <h1 id="title">Chef job survey Form</h1>
+    <p id="description">This survey is made for Michelin star restaurant chef role</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+        <fieldset>
+            <label id="name-label" for="name">Enter your full name: <input type="text" id="name" name="name" placeholder="Enter your name" required></label>
+            <label id="email-label" for="email">Enter your email address: <input type="email" id="email" name="email" placeholder="Enter your email" required></label>
+            <label id="number-label" for="number">Enter your age(optional): <input type="number" name="age" id="number" min="18" max="45" placeholder="Enter your age"></label>
+            <label id="experience-label" for="experience">Years of experience in professional kitchen? <input type="number" name="years" id="experience" placeholder="Years of experience"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Job type (required)</legend>
+            <label for="full-time">
+                <input type="radio" name="job-time" id="full-time" class="inline" value="full-time"> Full-time
+            </label>
+            <label for="part-time">
+                <input type="radio" name="job-time" id="part-time" class="inline" value="part-time"> Part-time
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">How did you hear about this role?
+            <select name="referrer" id="dropdown">
+                <option value="">(Select one)</option>
+                <option value="1">From friend</option>
+                <option value="2">Indeed</option>
+                <option value="3">Google</option>
+                <option value="4">From Gordon Ramsey</option>
+            </select>
+            </label>  
+        </fieldset>
+        <fieldset>
+            <legend>Culinary skills you have at adept level: </legend>
+            <input type="checkbox" name="skills" id="knife" value="knife">
+            <label for="knife">Knife Skills</label>
+            <input type="checkbox" name="skills" id="sauteing" value="sauteing">
+            <label for="sauteing">Sautéing</label>
+            <input type="checkbox" name="skills" id="roasting-baking" value="roasting-baking">
+            <label for="roasting-baking">Roasting and Baking</label>
+            <input type="checkbox" name="skills" id="boiling-simmering" value="boiling-simmering">
+            <label for="boiling-simmering">Boiling and Simmering</label>
+            <input type="checkbox" name="skills" id="flavor-balancing" value="flavor-balancing">
+            <label for="flavor-balancing">Seasoning and Flavor Balancing</label>
+            <input type="checkbox" name="skills" id="sauce" value="sauce">
+            <label for="sauce">Sauce Making</label>
+            <input type="checkbox" name="skills" id="grilling" value="grilling">
+            <label for="grilling">Grilling and Broiling</label>
+            <input type="checkbox" name="skills" id="plating" value="plating">
+            <label for="plating">Plating and Presentation</label>
+        </fieldset>
+        <fieldset>
+            <label for="bio">Please provide some information about your previous job experience:
+                <textarea name="bio" id="bio" rows="5" cols="30" placeholder="Previous job experience"></textarea>
+            </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
 </body>
 </html>

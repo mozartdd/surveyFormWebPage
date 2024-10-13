@@ -1,0 +1,29 @@
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+h1, p {
+    text-align: center;
+    margin: 1em 0;
+}
+
+form {
+    width: 60vh;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+}
+
+input, select {
+    width: 100%;
+}
+
+.inline {
+    display: inline;
+}
