@@ -2,6 +2,7 @@ body {
     height: 100vh;
     width: 100%;
     margin: 0;
+    font-family: Georgia, Times, Arial;
 }
 
 h1, p {
@@ -16,14 +17,22 @@ form {
     margin: 0 auto;
 }
 
+fieldset {
+    margin: 1em 0;
+}
+
 label {
     display: block;
+    margin: 2em 0;
 }
 
 input, select {
     width: 100%;
 }
 
-.inline {
+.inline, .set {
     display: inline;
+}
+.checkBox {
+    width: auto;
 }
