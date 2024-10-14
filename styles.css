@@ -3,7 +3,11 @@ body {
     width: 100%;
     margin: 0;
     font-family: Georgia, Times, Arial;
-    background: linear-gradient(gray, beige, gray);
+    background: linear-gradient(beige, grey, beige);
+    background-image: url("pixel.jpg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 110vh;
+
 }
 
 h1, p {
@@ -16,10 +20,12 @@ form {
     max-width: 500px;
     min-width: 300px;
     margin: 0 auto;
+    background-color: rgba(84, 168, 110, 0.432);
 }
 
 fieldset {
     margin: 1em 0;
+    border-color: rgba(231, 231, 231, 0.534);
 }
 
 label {
@@ -30,6 +36,7 @@ label {
 
 input, select {
     width: 100%;
+    background-color: rgba(125, 141, 125, 0.322)
 
 }
 
@@ -39,4 +46,8 @@ input, select {
 .checkBox {
     width: auto;
     margin: 1em 0;
+}
+
+input[type="submit"] {
+    background-color: beige;
 }
