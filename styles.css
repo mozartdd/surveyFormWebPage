@@ -3,6 +3,7 @@ body {
     width: 100%;
     margin: 0;
     font-family: Georgia, Times, Arial;
+    background: linear-gradient(gray, beige, gray);
 }
 
 h1, p {
@@ -24,10 +25,12 @@ fieldset {
 label {
     display: block;
     margin: 2em 0;
+    font-size: 1.2em;
 }
 
 input, select {
     width: 100%;
+
 }
 
 .inline, .set {
@@ -35,4 +38,5 @@ input, select {
 }
 .checkBox {
     width: auto;
+    margin: 1em 0;
 }
