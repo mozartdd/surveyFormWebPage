@@ -28,6 +28,10 @@ fieldset {
     border-color: rgba(231, 231, 231, 0.534);
 }
 
+::placeholder {
+    color: rgba(255, 255, 255, 1)
+  }
+
 label {
     display: block;
     margin: 2em 0;
